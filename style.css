@@ -1,226 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto:wght@300&family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Roboto:wght@300;400&family=Source+Serif+4:ital@1&family=The+Nautigal:wght@700&display=swap');
 
-*{
-    box-sizing: border-box;
-}
 body{
-    font-family: 'Roboto' , 'sans-serif';
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    background: #181818;
-    color: #fff;
-    overflow: hidden;
-}
-
-h1,h2,h3,h4,h5,h6{
-    font-weight: 300;
-}
-
-#wrapper {
-    display: flex;
-    flex-direction: row;
-}
-
-#left {
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:100vh;
-    flex: 1;
 }
 
-#right {
-    flex: 1;
-}
-
-#signin{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    padding-bottom: 1rem;
-}
-
-#signin form{
-    width: 80%;
-    padding-bottom: 3rem;
-}
-
-#signin .logo{
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-}
-
-#signin .logo img{
-    width: 100px;
-}
-
-#signin label{
-    font-size: 0.9rem;
-    line-height: 2rem;
+h1,h2,h3{
     font-weight: 500;
 }
 
-#signin .text-input{
-    margin-bottom: 1.3rem;
-    width:100%;
-    border-radius: 2px;
-    background: #181818;
-    border:1px solid #555;
-    color: #ccc;
-    padding: 0.4rem 1rem;
-    line-height: 1.3rem; 
+img {
+    width: 30px;
+    height: 30px;
 }
 
-#signin .primary-btn{
-    width: 100%;
-}
-
-#signin .secondary-btn, 
-.or,
-.links{
-    width:60%;
-}
-
-#signin .links a {
-    display:block;
-    color:white;
-    text-decoration: none;
-    margin-bottom: 1rem;
-    text-align:center;
-    font-size:0.9rem;
-}
-
-#signin .or{
-    display:flex;
-    flex-direction: row;
-    margin-bottom: 1.2rem;
-    align-items: center;
-}
-
-#signin .or .bar{
-    flex: auto;
+.bar {
     border: none;
     height: 1px;
-    background: #aaa;
+    background: #E1E5EA;
+    width: 120vh;
 }
 
-#signin .or span {
-    color:#ccc;
-    padding: 0 0.8rem;
-}
-
-/* Showcase */
-#showcase {
+#head-about, #head-activeon, #head-lang, #para-activeon, .resume{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    background: url('https://images.unsplash.com/photo-1512646737873-990ddc1a8e48?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center/  cover;
-    height: 100vh;
-    text-align: center;
 }
 
-#showcase .showcase-text{
-    font-size: 3rem;
-    width: 100%;
-    color: #fff;
-    margin-bottom: 1.5rem;
+#head-lang, #head-about, #head-activeon {
+    font-weight: 600;
+    font-size: 20px;
 }
 
-#showcase .secondary-btn {
-    width:60%;
-    margin: auto;
+.active-on #icons {
+    width: 40px;
 }
 
-/* Footer */
-#main-footer {
-    color: #ccc;
-    text-align: center; 
-    font-size: 0.8rem;
-    max-width: 80%;
-    padding-top: 5rem;    
+#logo-resume {
+    width: 90px;
+    height: 40px;
 }
 
-#main-footer a{
-    color: #f96816;
-    text-decoration: underline;
+#logo {
+    width: 100px;
+    height: 30px;
 }
 
-/* Button */
-.primary-btn{
-    padding: 0.7rem 1rem;
-    height: 2.7rem;
-    display: block;
-    border:0;
-    border-radius: 2px;
-    font-weight: 500;
-    background: #f96816;
-    color:#fff;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.5s;
+#logo-c {
+    width: 60px;
+    height: 30px;
 }
 
-.primary-btn:hover{
-    background-color: #ff7b39;
+#logo-cc {
+    width: 70px;
+    height: 30px;
 }
 
-.secondary-btn{
-    padding: 0.7rem 1rem;
-    height: 2.7rem;
-    display: block;
-    border: 1px solid #f4f4f4;  
-    border-radius: 2px;
-    font-weight: 500;
-    background:none;
-    color:#fff;
-    text-decoration: none;
-    cursor: pointer;
-    text-align: center;
-    transition: all 0.5s;
+#logo-java {
+    width: 80px;
+    height: 30px;
 }
 
-.secondary-btn:hover{
-    border-color: #ff7b39;
-    color:#ff7b39;
+#logo-css {
+    width: 70px;
+    height: 30px;
 }
 
-/* Media Queries (If the browser is greater than 1200px then make the right side bigger. */ 
-@media(min-width: 1200px){
-    #left {
-        flex:4;
-    }
-
-    #right{
-        flex:6;
-    }
+#logo-js {
+    width: 120px;
+    height: 30px;
 }
 
-@media(max-width: 768px){
-    body {
-        overflow: auto;
-    }
-
-    #right {
-        display:none;   
-    }
-
-    #left {
-        justify-content: start;
-        margin-top: 4vh;
-    }
-
-    #sigin .logo{
-        margin-bottom: 2vh;
-    }
-
-    #signin .text-input {
-        margin-bottom: 0.7rem;
-    }
-
-    #main-footer{
-        padding-top: 1rem;
-    }
-}
